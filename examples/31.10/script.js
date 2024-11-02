@@ -27,7 +27,6 @@ var a = 21;
 
 if (a % 2 == 0) {
     console.log(a, "sany jup san");
-    
 }
 
 var num = 100;
@@ -66,8 +65,32 @@ let total = (a + b) * c - d / e;
 
 console.log(total);
 
+var x = 105;
+var y = 40;
 
+if (x > y) {
+    console.log(x, "ulkenirek");
+} else {
+    console.log(y, "ulkenirek"); 
+}
 
+// var x = 100;
+// = =  ten ekenin bildiredi
+// if ( x == 100 ) {
+// console.log("keremet");
+// }
 
+// if ( x > 80 ) {
+//   console.log("jaman emes");
+//}
 
+//if ( x > 50 ) {
+//  console.log("try again");
+//}
 
+var x = 100;
+if (x == 100){
+    console.log(keremet);
+} else if ( x > 80 ) {
+    console.log(okay);
+}
