@@ -26,7 +26,7 @@
 
 let order = ""
 
-var bugerType = prompt ('Select the burger you want:' + '\n' + 'A)' + 'Chicken' + '\n' + 'b)' + 'Meat + ');
+var bugerType = prompt ('Select the burger you want:' + '\n' + 'A)' + 'Chicken' + '\n' + 'b)' + 'Meat' + '\n' + 'c)' + 'Meatless');
 
 if (bugerType == 'a') {
     order += "chicken"
@@ -37,7 +37,7 @@ if (bugerType == 'a') {
 }
 
 
-var drinkType = prompt ('Select the drink you want:');
+var drinkType = prompt ('Select the drink you want:' + '\n' + 'A)' + 'Cola' + '\n' + 'b)' + 'Sprite' + '\n' + 'c)' + 'Fanta');
 
 if (drinkType == 'a') {
     order += "Cola"
@@ -48,7 +48,7 @@ if (drinkType == 'a') {
 }
 
 
-var freeSize = prompt ('Select size of free:');
+var freeSize = prompt ('Select size of free:' + '\n' + 'A)' + 'Ketchup' + '\n' + 'b)' + 'BBQ' + '\n' + 'c)' + 'Cheese');
 
 if (souseType == 'a') {
     order += "Ketchup"
@@ -59,7 +59,7 @@ if (souseType == 'a') {
 }
 
 
-var souseType = prompt ('Select the souse:');
+var souseType = prompt ('Select the souse:' + '\n' + 'A)' + 'Small' + '\n' + 'b)' + 'Medium' + '\n' + 'c)' + 'Large');
 
 if (freeSize == 'a') {
     order += "Small"
@@ -71,5 +71,21 @@ if (freeSize == 'a') {
 
 
 alert(order)
+
+let option = prompt("1 den 3 ke dein san tandaniz");
+
+switch (option) {
+    case "1":
+        alert("Siz 1 tandadiniz");
+        break;
+    case "2":
+        alert("Siz 2 tandadiniz");
+        break;
+    case "3":
+        alert("Siz 3 tandadiniz");
+        break;
+    default:
+        alert("qate variant");
+}
 
 
