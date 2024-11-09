@@ -27,5 +27,13 @@ if (secondChoice == 'swim') {
 var thirdChoice = prompt("You have found a treasure chest! Are you going to open it or not?");
 
 if (thirdChoice == "Open"){
-    alert('')
+    alert("Congratulations, you have found a hidden trasure! Wow, gold and gems!")
+} else if (thirdChoice == "dont't") {
+    alert("You made the right choice, but fell into a river with a mysterious secret!");
+} else {
+    alert("Youb didn't make the right choice, it's game over");
 }
+
+alert("You have tested yourself and made a lot of choices," + playerName + "! Good luck on your next trip!");
+
+
