@@ -69,16 +69,3 @@
 
 
 // console.log(sum(startNumber,endNumber));
-
-
-// sandardi boljau
-
-let userGuess = 0;
-let attempts = 0;
-
-function GuessTheNumber(){
-    
-}
-
-
-

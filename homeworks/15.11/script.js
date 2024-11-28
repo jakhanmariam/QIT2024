@@ -1,14 +1,21 @@
-let correctPassword = prompt("amjilt_the_best");
-let userQ = prompt("enter the password");
-let maxAttempts = 5;
-let attempts = 0;
+let correctPassword = "amjilt_the_best";
+let login;
 
+for (let i = 0; i < 5; i++) {
+  do {
+    login = prompt("Парольді енгізіңіз:");
 
-for (attempts < maxAttempts) {
-    attempts++
+    if (login == correctPassword) {
+      alert("Қош келдіңіз!");
+      attempts = 5;
+      break;
+    } else {
+      alert("Қате!");
+    }
+  } while (attempts < 5);
 }
 
-if (userQ == correctPassword) {
-
+if (login) {
+  alert("Too many attempts");
 }
 
