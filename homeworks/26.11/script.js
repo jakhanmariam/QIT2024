@@ -1,4 +1,4 @@
-let arr = []
+let arr = [];
 while (true) {
     let num1 = prompt("Жұп сан енгізіңіз:");
     if (num1 % 2 !== 0) {
