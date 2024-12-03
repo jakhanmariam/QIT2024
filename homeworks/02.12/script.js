@@ -2,20 +2,22 @@ const book = {
     title: "The Boy in the Striped Pyjamas",
     author: "Novel by John Boyne",
     pages: 224,
-    isRead: true,
+    isRead: false,
 
     readBook: function() {
-        console.log(`siz ${this.title} kitabin ${this.author} jazgan kitabin okyp jatyrsyz`);
+        return `siz ${this.title} kitabin ${this.author} jazgan kitabin okyp jatyrsyz`;
     },
 
-    switchReadingStatus: function() {
-        this.isRead = false;
-        console.log(`oku kuyi janartyldy: ${this.isRead}`);
+    toggleReadingStatus: function() {
+        this.isRead = !this.isRead;
+        return this.isRead;
     }
 }
 
-book.readBook();
-book.switchReadingStatus();
-
+console.log(book.readBook());
+console.log(book.toggleReadingStatus 
+    ? 'siz osy kitapti okydynyz' 
+    : 'siz osy kitapti okydynyz'
+);
 
 

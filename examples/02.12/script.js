@@ -1,107 +1,107 @@
-// let numbers = [4, 7, 5, 10, 3, 12];
+let numbers = [4, 7, 5, 10, 3, 12];
 
-// function moreThan(num,array) {
-//     return array.filter(element => element > num);
-// }
+function moreThan(num,array) {
+    return array.filter(element => element > num);
+}
 
-// function sumOfElements(array) {
-//     return array.reduce((total, element) => total + element, 0);
-// }
+function sumOfElements(array) {
+    return array.reduce((total, element) => total + element, 0);
+}
 
-// console.log("barlyk sandar kosyndysy" + sumOfElements(numbers));
+console.log("barlyk sandar kosyndysy" + sumOfElements(numbers));
 
-// let choice = +prompt('\n 1) sandar kosyndysyn tabu \n 2) ortasha manin tabu \n 3) sandardy tuzip alu \n 4 ) sandar kosu \n 5 ) shygu');
-
-
-// function menu() {
-//     while (true) {
-//         let choice = +prompt(
-//             numbers +
-//                 '\n 1) sandar kosyndysyn tabu \n 2) ortasha manin tabu \n 3) sandardy tuzip alu \n 4 ) sandar kosu \n 5 ) shygu'
-//         );
-
-//         switch (choice) {
-//             case 1:
-//                 alert(sumOfElements(numbers));
-//                 break;
-//             case 2:
-//                 alert(average(numbers));
-//                 break;
-//             case 3:
-//                 alert(moreThan(numbers));
-//                 break;
-//             case 4:
-//                 alert(addNumber(numbers));
-//                 break;
-//             case 5:
-//                 return;
-//         }
-//     }
-// }
-
-// const car = {
-//     brand: "toyota",
-//     model: "camry",
-//     color: "white",
-//     year: 2020,
-//     isOk: true,
-// }
-
-// car.isOk = false;
-// car.owners = 5;
-// console.log(car);
+let choice = +prompt('\n 1) sandar kosyndysyn tabu \n 2) ortasha manin tabu \n 3) sandardy tuzip alu \n 4 ) sandar kosu \n 5 ) shygu');
 
 
-// console.log(`the brand of the car is ${car.brand}, the model of the car is ${car.model}, the year ${car.year}`);
+function menu() {
+    while (true) {
+        let choice = +prompt(
+            numbers +
+                '\n 1) sandar kosyndysyn tabu \n 2) ortasha manin tabu \n 3) sandardy tuzip alu \n 4 ) sandar kosu \n 5 ) shygu'
+        );
 
-// const calculator = {
-//     plus: function (a, b) {
-//         return a + b;
-//     },
-//     minus: function (a, b) {
-//         return a - b;
-//     },
-//     multiplication: function (a, b) {
-//         return a * b;
-//     }
-// }
+        switch (choice) {
+            case 1:
+                alert(sumOfElements(numbers));
+                break;
+            case 2:
+                alert(average(numbers));
+                break;
+            case 3:
+                alert(moreThan(numbers));
+                break;
+            case 4:
+                alert(addNumber(numbers));
+                break;
+            case 5:
+                return;
+        }
+    }
+}
 
-// console.log(calculator.plus(3, 5));
-// console.log(calculator.minus(3, 4));
-// console.log(calculator.multiplication(2, 5));
+const car = {
+    brand: "toyota",
+    model: "camry",
+    color: "white",
+    year: 2020,
+    isOk: true,
+}
+
+car.isOk = false;
+car.owners = 5;
+console.log(car);
 
 
-// let num1 = +prompt("san engiz");
-// let num2 = +prompt("san engiz");
-// let test = prompt("-/+/*");
+console.log(`the brand of the car is ${car.brand}, the model of the car is ${car.model}, the year ${car.year}`);
 
-// function menu() {
+const calculator = {
+    plus: function (a, b) {
+        return a + b;
+    },
+    minus: function (a, b) {
+        return a - b;
+    },
+    multiplication: function (a, b) {
+        return a * b;
+    }
+}
 
-//     switch (test) {
-//         case "minus":
-//             alert(calculator.minus(num1, num2));
-//             break;
-//         case "plus":
-//             alert(calculator.plus(num1, num2));
-//             break;
-//         case "multi":
-//             alert(calculator.multiplication(num1, num2));
-//             break;
-//     }
+console.log(calculator.plus(3, 5));
+console.log(calculator.minus(3, 4));
+console.log(calculator.multiplication(2, 5));
 
-//     return;
-// }
 
-// const product = {
-//     name: "e",
-//     rating: 5,
-//     price: 290283,
-//     discount: function(percent) {
-//         return this.price - (this.price * percent) /100;
-//     }
-// }
+let num1 = +prompt("san engiz");
+let num2 = +prompt("san engiz");
+let test = prompt("-/+/*");
 
-// console.log(product.discount(19));
+function menu() {
+
+    switch (test) {
+        case "minus":
+            alert(calculator.minus(num1, num2));
+            break;
+        case "plus":
+            alert(calculator.plus(num1, num2));
+            break;
+        case "multi":
+            alert(calculator.multiplication(num1, num2));
+            break;
+    }
+
+    return;
+}
+
+const product = {
+    name: "e",
+    rating: 5,
+    price: 290283,
+    discount: function(percent) {
+        return this.price - (this.price * percent) /100;
+    }
+}
+
+console.log(product.discount(19));
 
 const person = {
     name: "aizhan",
@@ -112,7 +112,7 @@ const person = {
     }
 }
 
-// console.log(person.greet());
+console.log(person.greet());
 
 // const resturantMenu = {
 //     items: [pizza,sushi,cola,juice];
@@ -124,8 +124,8 @@ const person = {
 //     }
 // }
 
-// resturantMenu.addItem();
-// console.log(resturantMenu.printMenu());
+resturantMenu.addItem();
+console.log(resturantMenu.printMenu());
 
 
 const resturantMenu = {
@@ -147,7 +147,7 @@ const resturantMenu = {
 
 resturantMenu.items.push({
     name: "pizza",
-    price: 2.5,
+    price: 2.5, 
     weight: 500,
     ingredients: ["dough", "cheese", "pepperoni"]
 })
