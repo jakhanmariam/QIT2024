@@ -115,7 +115,7 @@ const updateSnowflake = snowflake => {
     if (snowflake.y > canvas.height) {
         Object.assign(snowflake, createSnowflake());
     }
-}
+};
 
 const animate = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);

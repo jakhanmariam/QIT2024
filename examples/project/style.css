@@ -224,7 +224,7 @@ h2{
     transition-duration: .3s;
 }
 
-.home:hover {
+.home:hover{
     color: gold;
 }
 
