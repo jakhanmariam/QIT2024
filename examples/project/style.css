@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background-image: url(https://images.alphacoders.com/134/thumb-1920-1348846.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all .5s linear;
+}
+
+.header.sticky {
+    position: fixed; 
+    background-color:rgb(198, 224, 232);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+footer {
+    background-color: lightblue;
+    padding: 100px;
+    margin-top: 200px;
+}
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.arrow {
+    position: fixed;
+    top: 70vh;
+    left: 3%;
+    width: 50px;
+    background: white;
+    padding: 10px;
+    border-radius: 100px;
+    transition: all 0.5s;
+}
+
+
+
+.box {
+    font-size: 20px;
+    width: 500px;
+    padding: 10px;
+    background: blue;
+    margin: 0 auto;
+}
+
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 0.1px rgba(190, 190, 190, 0.699) solid;
+}
+
+
+.top p {
+    color: white;
+    font-size: 13px;
+}
+
+
+select {
+    background-color: transparent;
+    list-style: none;
+    border: none;
+    color: white;
+}
+
+
+.nav-bar {
+    font-family: "Montserrat", serif;
+    padding: 35px;
+    gap: 20px;
+}
+
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    transition-duration: .2s;
+}
+
+
+.logo {
+    color: white;
+    font-family: "Dancing Script", serif;
+}
+
+
+.icon {
+    color: white;
+    width: 25px;
+    padding: 3px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.title {
+    font-family: "Dancing Script", serif;
+    font-size: 50px;
+    position: absolute;
+    left: 565px;
+    top: 280px;
+    text-shadow: 3px 3px 5px black;
+}
+
+.subtitle {
+    position: absolute;
+    top: 390px;
+    font-size: 20px;
+    left: 400px;
+    font-family: "Montserrat", serif;
+}
+
+.shop-now-title {
+    position: absolute;
+    top: 392px;
+    right: 340px;
+    color: white;
+    font-family: "Montserrat", serif;
+    transition-duration: .3s;
+}
+
+.shop-now-title:hover {
+    color: gold;
+}
+
+.wavy {
+    margin-top: 455px;
+}
+
+
+
+.snow-logo {
+    width: 30px;
+    position: absolute;
+    left: 700px;
+    top: 800px;
+}
+
+
+
+
+
+#cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 0 300px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+.card img {
+    height: 60%;
+    object-fit: contain;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding: 50px;  
+    font-family: "Montserrat", serif;
+    color: rgb(233, 198, 5);
+}
+
+.home, .blog, .shop {
+    padding: 20px;
+    transition-duration: .3s;
+}
+
+.home:hover {
+    color: gold;
+}
+
+.shop:hover {
+    color: gold;
+}
+
+.blog:hover {
+    color: gold;
+}
+
+
+
+.about-ordering {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    justify-content: center;
+    margin-top: 200px;
+    
+}
+
+.about-ordering p {
+    font-family: "Montserrat", serif;
+    
+}
+
+.shipping img {
+    width: 50px;
+}
+
+.return img {
+    width: 50px;
+}
+
+.quality img {
+    width: 50px;
+}
+
+
+.scroll-photo {
+    background-color: lightblue;
+    padding: 200px;
+    margin-top: 100px;
+}
+
+
+.photo {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.scroll-text {
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    text-align: center;
+    row-gap: 20px;
+}
+
+.photo img {
+    border-radius: 999px;
+    width: 100px;
+    height: 100px;
+    margin-top: -100px;
+}
+
+
+
+.icon{
+    width: 30px;
+}
+
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.email {
+    padding: 20px;
+}
+
+.container-email {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.email img {
+    width: 50px;
+}
+
+.input-email {
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px yellow;
+    padding-right: 100px;
+}
+
+.santa img {
+    width: 400px;
+}
+
+
+
+
+.email-form {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(234, 234, 99);
+}
+
+
+
+
+
+

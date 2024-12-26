@@ -1,0 +1,86 @@
+header {
+    background-color: rgb(178, 178, 178);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.register {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.login {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(102, 180, 198);
+    padding: 20px 15px;
+    gap: 20px;
+    border: black 1.5px solid;
+    border-radius: 10px;
+}
+
+#registerForm input[type='text'] {
+    width: 300px;
+    height: 30px;
+}
+
+#errorMessage {
+    background: red;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    position: absolute;
+    transform: translateY(-100vh);
+    transform: all 0.5s;
+}
+
+.arrow {
+    position: fixed;
+    top: 70vh;
+    left: 3%;
+    width: 80px;
+    background: white;
+    padding: 10px;
+    border-radius: 100px;
+    transition: all 0.5s;
+}
+
+.box {
+    font-size: 20px;
+    width: 500px;
+    padding: 10px;
+    background: blue;
+    margin: 0 auto;
+}
+
