@@ -126,7 +126,7 @@ const animate = () => {
     });
 
     requestAnimationFrame(animate);
-}
+};
 
 for (let i = 0; i < NUMBER_OF_SNOWFLAKES; i++) {
     snowflakes.push(createSnowflake());
