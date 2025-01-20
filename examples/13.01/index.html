@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Animation effects</h1>
+    <div id="output"></div>
+
+
+
+    
+    <script src="script.js">
+        const text = 'hey, this is a paragraph';
+        const output = document.getElementById('output');
+        let index = 0;
+
+        function typeText () {
+            if(index < text.length) {
+                output.textContent += text[index];
+                index++;
+                setTimeout(typeText, 100);
+            }
+        }
+
+        typeText();
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- <h1 class="text">countdown</h1>
+    <div id="countdown">5</div> -->
+
+
+
+
+
+
+
+
+    <!-- <script src="script.js">
+    const interval=setInterval(()=>{
+        let count = 5;
+        count--;
+    if (count <= 0) {
+    clearInterval(interval);
+    document.getElementById("countdown").innerHTML = "Уақыт аяқталды!";
+    } else {
+    document.getElementById("countdown").innerHTML = `countdown: ${count}`;
+    }},1000);
+
+    </script> -->

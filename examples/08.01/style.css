@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.body {
+    position: relative;
+    height: 100vh;
+}
+
+
+.wrapper {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 300px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+
+
+.cards, .card, .view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card .front-view img {
+    width: 130px;
+}
+
+
+.card .back-view img {
+    width: 130px;
+}
+
+
+.cards {
+    width: 800px;
+    height: 700px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+.cards .card {
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    position: relative;
+    height: calc(100%/4);
+    width: calc(100%/4);
+}
+
+
+.cards .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card .view {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+
+.card .back-view {
+    transform: rotateY(-180deg);
+}
+
+
+.card{
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+
+.flipped{
+    transform: rotateY(180deg);
+}
+
+
+
+.btns {
+    margin-top: 100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    justify-content: space-between;
+}
+
+
+#startButton:hover, #resetButton:hover {
+    color: white;
+    font-weight: bold;
+}
+
+
+#startButton, #resetButton {
+    width: 150px;
+    height: 50px;
+    font-size: 35px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+#startButton {
+    background-color: green;
+}
+
+
+
+#resetButton {
+    background-color: yellow;
+}
+
+
+
+#timer {
+    position:absolute;
+    top: 20px;
+    left: 45%;
+    font-size: 18px;
+    color: wheat;
+}
+
+
+
+#result {
+    position: absolute;
+    top: 40px;
+    left: 47%;
+    color: yellow;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
