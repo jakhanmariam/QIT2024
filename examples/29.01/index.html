@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <form class="form">
+        <h3>Login</h3>
+        <input type="name" class="pk" id="name" placeholder="enter your name"><br>
+        <input type="email" class="pk" id="email" placeholder="email"><br>
+        <input type="password" class="pk" id="password" placeholder="enter your password"><br>
+        <button class="btn" onclick="saveData()">save</button>
+        <button class="btn" onclick="showData()">show</button>
+        <button class="btn" onclick="removeData()">delete</button>
+    </form> -->
+
+
+    <h1>Choose color</h1>
+    <p>choose one color: <input id="color" type="color"> </p>
+    <button onclick="saveData()">save the color</button>
+    <button onclick="removeData()">remove</button>
+
+
+
+
+
+    <script>
+
+        function saveData() {
+            const color = document.getElementById('color').value
+
+
+            if (color){
+            sessionStorage.setItem("color", color);
+            document.body.style.backgroundColor = color;
+
+            alert("saved");
+        } else {
+
+           alert("choose one color");
+
+        }
+      }
+
+        function removeData() {
+            document.body.style.background = 'white';
+
+            alert('removed')
+        }
+
+
+        window.onload = function() {
+        const savedColor = sessionStorage.getItem("color");
+       if (savedColor) {
+        document.body.style.backgroundColor = savedColor;
+    }
+}
+
+
+
+
+        // function saveData() {
+        //     const name = document.getElementById('name').value
+        //     const email = document.getElementById('email').value
+        //     const password = document.getElementById('password').value
+
+
+
+        //     if (name && email && password) {
+        //         sessionStorage.setItem('name', name)
+        //         sessionStorage.setItem('email', email)
+        //         sessionStorage.setItem('password', password)
+
+        //         alert('saved')
+        //     } else {
+        //         alert('enter your name')
+        //     }
+        // }
+
+        // function showData() {
+        //     const name = sessionStorage.getItem('name')
+        //     const email = sessionStorage.getItem('email')
+        //     const password = sessionStorage.getItem('password')
+
+        //     alert(`name: ${name}, email: ${email}, password: ${password}`)
+        // }
+
+
+        // function removeData() {
+        //     const name = sessionStorage.removeItem('name')
+        //     const email = sessionStorage.removeItem('email')
+        //     const password = sessionStorage.removeItem('password')
+
+        //     alert('has removed')
+        // }
+    </script>
+</body>
+</html>

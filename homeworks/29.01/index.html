@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Choose color</h1>
+    <p>choose one color: <input id="color" type="color"> </p>
+    <button onclick="saveData()">save the color</button>
+    <button onclick="removeData()">remove</button>
+
+
+
+    <script>
+
+        function saveData() {
+            const color = document.getElementById('color').value
+
+
+            if (color){
+            sessionStorage.setItem("color", color);
+            document.body.style.backgroundColor = color;
+
+            alert("saved");
+        } else {
+
+           alert("choose one color");
+
+        }
+      }
+
+        function removeData() {
+            document.body.style.background = 'white';
+
+            alert('removed')
+        }
+
+
+        window.onload = function() {
+        const savedColor = sessionStorage.getItem("color");
+       if (savedColor) {
+        document.body.style.backgroundColor = savedColor;
+    }
+}
+
+    </script>
+</body>
+</html>
