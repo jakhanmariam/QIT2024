@@ -1,0 +1,42 @@
+.answer-container {
+    background-color: rgb(183, 208, 231);
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 23px;
+    border: solid 2px black;
+}
+
+
+.answer-container h3 {
+    text-align: center;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    gap: 3px;
+}
+
+.ans1 {
+    background-color: lightblue;
+}
+
+.ans2 {
+    background-color: rgb(210, 221, 231);
+}
+
+.ans3 {
+    background-color: rgb(87, 137, 188);
+}
+
+.ans4 {
+    background-color: rgb(139, 213, 237);
+}
+
+
+.ans1, .ans2, .ans3, .ans4 {
+    border-radius: 20px;
+    padding: 50px;
+}

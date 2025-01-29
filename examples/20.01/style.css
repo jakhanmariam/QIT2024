@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.top {
+    background-color: aliceblue;
+    padding: 70px;
+    box-shadow: 5px 1px 2px rgb(0, 0, 0);
+}
+
+
+
+.top h3 {
+    text-align: center;
+    font-family: "Rethink Sans", serif;
+}
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+
+
+main img {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.answers {
+    font-family: "Rethink Sans", serif;
+}
+
+
+
+
+.time {
+    background-color: rgb(220, 150, 220);
+    border-radius: 999px;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    font-family: "Rethink Sans", serif;
+    color: white;
+}
+
+
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-top: 100px;
+}
+
+
+
+.btn1, .btn2, .btn3, .btn4 {
+    padding: 50px;
+    border: none;
+    color: white;
+}
+
+
+
+.btn1 {
+    background-color: rgb(245, 73, 73);
+}
+
+
+.btn2 {
+    background-color: rgb(72, 170, 203);
+}
+
+
+.btn3 {
+    background-color: rgb(220, 220, 18);
+}
+
+
+.btn4 {
+    background-color: green;
+}
+
+
+.skip {
+    width: 80px;
+    height:40px;
+    position: absolute;
+    top: 180px;
+    right: 20px;
+}
+
+
+.sound {
+    position: absolute;
+    width: 30px;
+    top: -80px;
+    right: 10px;
+}
+

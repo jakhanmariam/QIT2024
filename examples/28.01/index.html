@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name" type="name" placeholder="enter your name">
+    <input id="age" type="text" placeholder="enter your age">
+    <button onclick="saveData()">save</button>
+    <button onclick="showData()">show</button>
+    <button onclick="clearData()">clear</button>
+
+    <script>
+
+
+        function saveData() {
+            const name = document.getElementById('name').value
+            const age = document.getElementById('age').value
+
+
+            if(name && age) {
+                localStorage.setItem('name', name)
+                localStorage.setItem('age', age)
+
+                alert('saved')
+            } else {
+                alert('enter your name and age')
+            }
+        }
+
+        function showData(){
+            const name = localStorage.getItem('name')
+            const age = localStorage.getItem('age')
+            alert(`name: ${name}, age: ${age}`)
+        }
+
+        function clearData() {
+            const name = localStorage.removeItem('name')
+            const age = localStorage.removeItem('age')
+            alert('has removed');
+        }
+
+
+    </script>
+</body>
+</html>
