@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+header{
+    background: #a2d9ff;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+
+
+
+
+
+
+footer {
+    background: #a2d9ff;
+    padding: 100px;
+    margin-top: -20px;
+    display: flex;
+    font-family: "Rethink Sans", serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wavy {
+    margin-top: 500px;
+}
+
+
+
+.webName{
+    display: flex;
+    align-items: center;
+    font-family: "Playwrite GB S", serif;
+}
+
+
+.navbar:hover {
+    color: rgb(90, 90, 250);
+}
+
+
+
+.navbar{
+    transition: 0.2s;
+}
+
+
+nav a{
+    text-decoration: none;
+    padding: 30px;
+    color: black;
+    font-family: "Playwrite GB S", serif;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+
+
+.color-display {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    width: 500px;
+    height: 500px;
+}
+
+
+
+
+input[type="color"] {
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+h2 {
+    margin-top: 30px;
+}
+
+
+
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+button:hover {
+    background-color: #218838;
+}
+
+
+
+.gradient-box {
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(45deg, #ff0000, #0000ff);
+    border-radius: 8px;
+}
+
+.logo {
+    position: absolute;
+    left: 130px;
+    top: 30px;
+
+}

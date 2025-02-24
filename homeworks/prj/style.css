@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background-color: beige;
+}
+
+
+
+header {
+    background-color: #6C7C59;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.header {
+    position: sticky;
+    top: 0;
+    padding: 10px px;
+    color: white;
+}
+
+
+
+.logo {
+    font-family: "Dancing Script", serif;
+    font-size: 50px;
+}
+
+
+
+.sidepanel {
+    height: 2000px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+}
+
+
+
+.sidepanel a {
+    padding: 30px 40px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    transition: 0.3s;
+    color: rgba(0, 0, 0);
+}
+
+
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    width: 30px;
+}
+
+
+
+.big-text {
+    font-family: "Montserrat", serif;
+    gap: 20px;
+}
+
+
+
+.three {
+    display: flex;
+    justify-content: baseline;
+    padding: 80px;
+    position: absolute;
+    margin-top: -400px;
+    z-index: -1;
+    left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 13px;
+    column-gap: 100px;
+}
+
+
+
+.three img {
+    width: 100px;
+    border-radius: 1000px;
+}
+
+
+
+.three p {
+    font-family: "Montserrat", serif;
+}
+
+
+
+.back {
+    background-color: #6C7C59;
+    z-index: -1;
+    height: 800px;
+    width: 300px;
+    margin-right: 150px;
+}
+
+
+
+.back-c{
+    display: flex;
+    justify-content: right;
+}
+
+
+
+.twxt {
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+
+.register-login {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    z-index: -1;
+    position: absolute;
+    top: 120px;
+    margin-left: 120px;
+}
+
+
+
+.register {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background: none;
+    border: none;
+}
+
+
+
+
+.apps img {
+    width: 30px;
+}
+
+
+
+footer {
+    background-color: #6C7C59;
+    padding: 90px;
+    margin-top: px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.footer-firstContainer {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    color: rgba(0, 0, 0);
+}
+
+
+
+#search {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+}
+
+
+
+.shop-logo img {
+    width: 20px;
+}
+
+
+
+.bottom {
+    background-color: beige;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.bottom p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.image img {
+    width: 500px;
+    margin-top: 195px;
+    margin-right: 70px;
+}
+
+
+
+hr {
+    color: black;
+}
+
+
+
+.CONTAINER1{
+    background-color: #b5c99a;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.bakery-image img{
+    width: 380px;
+    border-radius: 20% 30% / 30% 50%;
+}
+
+
+
+
+
+.CONTAINER2{
+    background-color: #e9f5db;
+    padding: 80px;
+}

@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-image: url(https://media.istockphoto.com/id/481483989/photo/sunset-at-thap-tawan-beach-phang-nga-province.jpg?b=1&s=612x612&w=0&k=20&c=nIEwMoFReBsWoyTgmX6rWd2Dja_W6bR6Fk01bgksHkk=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    margin: 0px;
+}
+
+
+
+.container1 {
+    display: flex;
+   justify-content: space-around;
+}
+
+
+.container1 img {
+    width: 1100px;
+    border-radius: 20px;
+}
+
+
+header {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+.nvb {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    color: white;
+}
+
+
+
+
+.logo-name h3 {
+    color: white;
+    font-family: "Nunito", serif;
+    justify-content: center;
+}
+
+
+
+
+.logo {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 1120px;
+    top: 57px;
+}
+
+
+
+
+.search {
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+}
+
+
+
+
+.date {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+.navbar {
+    border-radius: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    border-radius: 90px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+}
+
+
+
+
+.navbar a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    color: black;
+    transition: .5s;
+}
+
+
+
+
+.navbar li{
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+
+.navbar a:hover {
+    background-color: hsla(212, 59%, 80%, 0.523);
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.container1{
+    margin-top: 90px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0.2, 0.2, 0.2, 0.2);
+    text-align: center;
+}
+
+
+.city {
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.city:hover {
+    background-color: rgb(161, 116, 219);
+}
+
+
+
+.city {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.side {
+    margin-top: 90px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0.2, 0.2, 0.2, 0.2);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.cityname, .citytemp h1 p h3 {
+    font-family: "Nunito", serif;
+}
+
+.currentWeather{
+    display: flex;
+    justify-content: space-between; 
+    font-size: 16px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    padding-bottom: 5px;
+}
+
+
+
+.weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 10px;
+}
+
+
+
+.icon{
+    font-size: 20px;
+}
+
+
+
+.temperatura h1{
+    font-size: 40px;
+}
+
+
+
+.temperatura p{
+    font-size: 14px;
+    color: grey;
+}
+
+
+
+.mostly{
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(50, 50, 50);
+}
+
+
+
+.detal{
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgb(36, 36, 36);
+}
+
+
+
+
+.detal p{
+    display: flex;
+    border-bottom: 1px solid rgb(207, 206, 206);
+    padding: 5px;
+}
+
+
+
+.air-quality{
+    color: red;
+    font-weight: bold;
+}
+
