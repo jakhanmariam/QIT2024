@@ -7,8 +7,6 @@ header{
 
 
 
-
-
 * {
     padding: 0;
     margin: 0px;
@@ -25,6 +23,9 @@ header{
     gap: 20px;
 
 }
+
+
+
 
 main {
     display: flex;

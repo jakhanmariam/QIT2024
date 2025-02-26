@@ -16,7 +16,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 1fr, 50px;
-    margin-top: 50px;
+    margin-top:  50px;
 }
 
 

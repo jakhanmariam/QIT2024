@@ -9,15 +9,15 @@
 </head>
 <body>
     <div class="container">
-        <div class="form-box login">
+        <div class="form-box login" id="lg">
             <form action="">
                 <h1>Login</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Username" required>
+                    <input type="text" placeholder="Username" id="name" irequired>
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Password" id="pw" required>
                     <i class='bx bxs-lock-alt'></i>
                 </div>
                 <div class="forgot-link">
@@ -32,19 +32,23 @@
             </form>
         </div>
 
-        <div class="form-box register">
+        <div class="form-box register" id="reg">
             <form action="">
                 <h1>Register</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Username" required>
+                    <input type="text" placeholder="Username" id="regName" required>
                     <i class='bx bxs-user'></i>
                 </div>
-                <div class="input-box">
-                    <input type="email" placeholder="email" required>
+                <div class="input-box"> 
+                    <input type="email" placeholder="email" id="email" required>
                     <i class='bx bx-envelope'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Password" id="regPw" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div> 
+                <div class="input-box">
+                    <input type="password" placeholder="Confirm Password" id="confirmPw" required>
                     <i class='bx bxs-lock-alt'></i>
                 </div>               
                 <button type="submit" class="btn">Register</button>

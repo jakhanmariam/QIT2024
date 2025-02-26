@@ -117,7 +117,6 @@ function reloadCard(){
     quantity.innerText = count;
 }
 
-
 function changeQuantity (key, quantity) {
     if(quantity == 0) {
         delete listCards[key];
